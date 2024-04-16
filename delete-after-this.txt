@@ -1,0 +1,22 @@
+Optimizing Images
+
+Optimizing image using the Image component in Next.js
+
+This component is built on top of the standard img element in html
+Under the hood it automatically compresses and resizes our images based on the device size
+Props: 
+    src -> good for images that is local to our application (e.g. logo) (@ -> root of the application)
+        -> url for remote images - always provide dimensions
+    alt -> describe the image
+    width
+    height
+    fill -> for responsive image
+    style -> objectFit cover objectFit contain -> better approach is to use tailwind
+    sizes -> determines how much of the width of the viewport the image is going to take - (max-width: 480px) it's not gonna impact what we see on the screen
+    quality -> 1 - 100
+    priority
+
+    parent element should be relative, absolute, fixed -> fill
+    parent element should have height
+
+register domain to react configuration file
